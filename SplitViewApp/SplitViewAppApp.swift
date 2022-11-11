@@ -11,7 +11,7 @@ import SwiftUI
 struct SplitViewAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ThreeColumnSplitView()
         }
     }
 }
