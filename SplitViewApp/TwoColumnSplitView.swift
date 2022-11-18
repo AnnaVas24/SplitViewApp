@@ -11,11 +11,11 @@ struct TwoColumnSplitView: View {
    
     @State private var selectedCategoryId: MenuItem.ID?
     
-    private var course = Course()
+    private let menuItem = MenuItem.getMenuItem()
     
     var body: some View {
         NavigationSplitView {
-              List(course.mainMenuItems, selection: $selectedCategoryId) { item in
+            List(menuItem.getMainMenuItems(), selection: $selectedCategoryId) { item in
                   HStack {
                       Image(systemName: item.image)
                           .resizable()
@@ -31,7 +31,7 @@ struct TwoColumnSplitView: View {
    
           } detail: {
               if let selectedCategoryId,
-                 let categoryItems = course.getSubMenuItems(for: selectedCategoryId) {
+                 let categoryItems = menuItem.getSubMenuItems(for: selectedCategoryId) {
    
                   List(categoryItems) { item in
                       HStack {

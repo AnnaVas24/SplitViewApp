@@ -12,11 +12,11 @@ struct ThreeColumnSplitView: View {
     @State private var selectedItem: MenuItem?
     @State private var columnVisibility = NavigationSplitViewVisibility.all
     
-    private var course = Course()
+    private var menuItem = MenuItem.getMenuItem()
     
     var body: some View {
         NavigationSplitView(columnVisibility: $columnVisibility) {
-            List(course.mainMenuItems, selection: $selectedCategoryId) { item in
+            List(menuItem.getMainMenuItems(), selection: $selectedCategoryId) { item in
                 HStack {
                     Image(systemName: item.image)
                         .resizable()
@@ -32,7 +32,7 @@ struct ThreeColumnSplitView: View {
             
         } content: {
             if let selectedCategoryId,
-               let subMenuItems = course.getSubMenuItems(for: selectedCategoryId) {
+               let subMenuItems = menuItem.getSubMenuItems(for: selectedCategoryId) {
             
                 List(subMenuItems, selection: $selectedItem) { item in
                     NavigationLink(value: item) {

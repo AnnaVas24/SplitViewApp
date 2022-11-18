@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		514C227829279FCB005B8006 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514C227729279FCB005B8006 /* DataStore.swift */; };
 		51AE5238291E715E007660CE /* SplitViewAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AE5237291E715E007660CE /* SplitViewAppApp.swift */; };
 		51AE523A291E715E007660CE /* TwoColumnSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AE5239291E715E007660CE /* TwoColumnSplitView.swift */; };
 		51AE523C291E715E007660CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51AE523B291E715E007660CE /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		514C227729279FCB005B8006 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		51AE5234291E715E007660CE /* SplitViewApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplitViewApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51AE5237291E715E007660CE /* SplitViewAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewAppApp.swift; sourceTree = "<group>"; };
 		51AE5239291E715E007660CE /* TwoColumnSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoColumnSplitView.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				51AE5239291E715E007660CE /* TwoColumnSplitView.swift */,
 				51AE5247291E8A61007660CE /* ThreeColumnSplitView.swift */,
 				51AE5245291E74DE007660CE /* MenuItem.swift */,
+				514C227729279FCB005B8006 /* DataStore.swift */,
 				51AE523B291E715E007660CE /* Assets.xcassets */,
 				51AE523D291E715E007660CE /* Preview Content */,
 			);
@@ -146,6 +149,7 @@
 				51AE5246291E74DE007660CE /* MenuItem.swift in Sources */,
 				51AE523A291E715E007660CE /* TwoColumnSplitView.swift in Sources */,
 				51AE5248291E8A61007660CE /* ThreeColumnSplitView.swift in Sources */,
+				514C227829279FCB005B8006 /* DataStore.swift in Sources */,
 				51AE5238291E715E007660CE /* SplitViewAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
